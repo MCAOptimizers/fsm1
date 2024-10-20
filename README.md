@@ -1,16 +1,24 @@
-# fsm1
+# FSM1 Flutter App
 
-A new Flutter project.
+Denne app er bygget med Flutter og inkluderer følgende funktioner:
 
-## Getting Started
+- Geolocation og Google Maps
+- Stregkodescanning med Barcode Scanner
+- Tidsregistrering for hver opgave
 
-This project is a starting point for a Flutter application.
+## main.dart
+```dart
+// main.dart
+import 'dart:async';
+import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:geocoding/geocoding.dart'; 
+import 'package:barcode_scan2/barcode_scan2.dart';
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+void main() {
+  runApp(const MyApp());
+}
+...
+// rest of your code here
